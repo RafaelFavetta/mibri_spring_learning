@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=mibri-db'
+      - 'POSTGRES_PASSWORD=mibri'
+      - 'POSTGRES_USER=mibri'
+    ports:
+      - '5440:5432'

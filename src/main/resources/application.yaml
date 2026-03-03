@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: mibri
+  datasource:
+    url: jdbc:postgresql://localhost:5440/mibri-db
+    username: mibri
+    password: mibri
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        ddl:
+          auto: update
